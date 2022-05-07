@@ -19,7 +19,7 @@
  */
 #}
 {% if draw_controls %}
-    <input id="add-item-quantity-{{ nid }}" class="add-item-quantity" type="number" step="1" value="1" max="10" /> <button type="button" onclick="addItem({{ nid }})">Add</button>
+    <input id="add-item-quantity-{{ nid }}" class="add-item-quantity" type="number" step="1" /> <button type="button" onclick="addItem({{ nid }})">Add</button>
 {% elseif nid == 0 %}
     {{ output -}}
 {% endif %}
