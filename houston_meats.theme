@@ -178,7 +178,7 @@ function houston_meats_preprocess_views_view_field(&$variables)
     $variables['draw_controls'] = false;
 
     $view = $variables['view'];
-    if ($view->id() === 'products') {
+    if (in_array($view->id(), ['products', 'all_meats'])) {
         $field = $variables['field'];
         if ($field->field === 'nid') {
             $variables['nid'] = 0;
