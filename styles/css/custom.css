@@ -3,3 +3,35 @@
  * Use this file to override styles if you feel uncomfortable editing
  * component stylesheets.
  ============================================================================ */
+body.path-frontpage .node {
+	background-color: transparent;
+}
+
+/* Prevent node titles from appearing on the Front Page */
+body.path-frontpage h1 {
+	display: none;
+}
+
+.dialog-off-canvas-main-canvas {
+	background-color: transparent;
+}
+
+.node img, .block img {
+	box-shadow: 4px 4px 4px gray;
+	border-radius: 4px;
+}
+
+/* Blocks in the main section get special treatment */
+#rid-content .contextual-region.block:first-child {
+	background-color: #F7E6DE;
+	padding: 1em;
+	border: 3px solid #E7D6CE;
+}
+
+#rid-content .contextual-region.block .block-plugin-id--page-title-block {
+	background-color: transparent;
+}
+
+.views-field-title p {
+    margin: 0;
+}
